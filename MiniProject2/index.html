@@ -5,14 +5,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adder</title>
+    <title>Calculator</title>
+    <link rel="shortcut icon" href="./Assets/download.ico" type="image/x-icon">
     <link rel="stylesheet" href="./index.css">
 </head>
 
 <body>
-    <form>
-        <input type="number" id="a"/>
-    </form>
+
+   <header>
+       <nav>
+           <div class="header1" width="device-width">
+           <h1>My Web - Calculator</h1>
+           <p class="info">
+               <b>
+                   This is my first web-page design with
+                   HTML, CSS and JAVASCRIPT
+                   and it's a calculator.
+               </b>
+           </p>
+           <h3>
+               Made by Bersilin Robert
+           </h3>
+           </div>
+           <div class="links">
+               <a href="https://github.com/bersilin-robert1609" target="_blank">Github</a>
+               <a href="https://www.instagram.com/bersilin_robert/" target="_blank">Instagram</a>
+            </div>
+       </nav>
+       <hr/>
+   </header>
+
+   <div class="input">
+       <form onsubmit="add()" class="form">
+           <input type="number" id="a" placeholder="Enter First Number" aria-placeholder="Enter First Number">
+           <input type="number" id="b" placeholder="Enter Second Number"  aria-placeholder="Enter Second Number">
+           <p class="op">
+                1-ADD, 2-SUB, 3-MUL, 4-IDIV
+           </p>
+           <input type="number" id="c" placeholder="Enter Operation" aria-placeholder="Enter Operation">
+           <button type="submit">Submit</button>
+        </form>
+   </div>
+   <p style="display: none" id="ans">Answer : <input id="answer"/></p>
+   <script src="./script.js"></script>
+
 </body>
 
 </html>

@@ -15,7 +15,8 @@ h3{
     color: rgb(19, 30, 175);
 }
 .header1{
-    margin: 0px;
+    padding: 15px;
+    background-color: rgb(224, 172, 75);
 }
 body{
     background-color: cornsilk;
